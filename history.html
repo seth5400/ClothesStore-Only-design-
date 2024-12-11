@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMJ | Shopping Online</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-test.css">
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+    <style>
+        .history-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: cool, sans-serif;
+            letter-spacing: 2px;
+            line-height: 30px;
+            text-indent: 2%;
+
+        }
+
+        .history-container {
+            background-color: #fff;
+            border: 2px solid #ff523b;
+            border-radius: 25px;
+            padding: 5%;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .product-item {
+            margin-right: 20px;
+            border-bottom: 3px solid #ff523b;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 2%;
+            transition: tranform 0.5s ease;
+            box-shadow: 0 0.5 0.6 0.6 rgba(0, 0, 0.5, 0.2);
+        }
+
+        .product-item:hover {
+            transform: translateY(-2%);
+            background-color: #f2f2f2;
+            border-radius: 25px;
+        }
+
+        .product-item img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-item span {
+            display: block;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+
+<body>
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li1 active-menu"><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--jv of ham menu-->
+    <script>
+        function toggleHam(x) {
+            x.classList.toggle("change");
+
+            let myMenu = document.getElementById('myMenu');
+            if (myMenu.className === 'menu2') {
+                myMenu.className += ' menu2-active'
+            }
+            else {
+                myMenu.className = 'menu2'
+            }
+        }
+
+    </script>
+
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./index.html">Home</a></li>
+            <li><a class="bread" href="./helps.html">Helps</a></li>
+            <li>History</li>
+        </ul>
+    </div>
+
+    <h2 class="title">History</h2>
+    <!--content-->
+    <div class="history-content">
+        <div class="history-container">
+            <h2>Purchase History</h2>
+
+            <!-- Purchase Record 1 -->
+            <div class="purchase-record">
+                <h3>Order ID: 123456</h3>
+                <p>Date: January 15, 2023</p>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="./image/black/pan-3.jpg" alt="Product 1">
+                        <span>Black Long PantGMJ</span>
+                    </div>
+                    <div class="product-item">
+                        <img src="./image/blue/pan-4.jpg" alt="Product 2">
+                        <span>Jane PantGMJ</span>
+                    </div>
+
+                </div>
+                <p>Total Amount: ฿1000.00</p>
+            </div>
+
+            <!-- Purchase Record 2 -->
+            <div class="purchase-record">
+                <h3>Order ID: 789012</h3>
+                <p>Date: February 20, 2023</p>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="./image/black/pan-sh3.jpg" alt="Product 3">
+                        <span>Black Short PantGMJ</span>
+                    </div>
+                </div>
+                <p>Total Amount: ฿450.00</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

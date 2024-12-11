@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Products | GMJ</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-test.css">
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+
+<body>
+
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li class="li1 active-menu"><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--jv of ham menu-->
+    <script>
+        function toggleHam(x) {
+            x.classList.toggle("change");
+
+            let myMenu = document.getElementById('myMenu');
+            if (myMenu.className === 'menu2') {
+                myMenu.className += ' menu2-active'
+            }
+            else {
+                myMenu.className = 'menu2'
+            }
+        }
+
+    </script>
+
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./index.html">Home</a></li>
+            <li>Men</li>
+        </ul>
+    </div>
+
+    <div class="small-container">
+        <h2 class="title">Products</h2>
+    </div>
+
+    <div class="filter">
+
+        <h3 data-filter="all" class="filter-title list active-filter">All</h3>
+
+        <h3 class="filter-title">Type</h3>
+        <ul>
+            <li data-filter="new-p" class="list first-letter">New Products</li>
+            <li data-filter="pop-p" class="list">Popular Products</li>
+        </ul>
+        <h3 class="filter-title">Color</h3>
+        <ul>
+            <li data-filter="blue" class="list first-letter">Blue</li>
+            <li data-filter="green" class="list">Green</li>
+            <li data-filter="black" class="list">Black</li>
+            <li data-filter="yellow" class="list">Yellow</li>
+            <li data-filter="white" class="list">White</li>
+        </ul>
+    </div>
+    <!--featured products -->
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-1 itemBox" data-item="black">
+                <img src="./img/p1-1.jpg" alt="pant">
+                <p class="text-col-1">White Pant</p>
+                <p class="text-col-1">&#3647;800</p>
+                <a href="./product-detail-men-pa-s-1.html"><i class="fa-solid fa-cart-shopping cart"></i></a>
+
+            </div>
+            <div class="col-1 itemBox" data-item="black">
+                <img src="./img/p1-2.jpg" alt="pant">
+                <p class="text-col-1">Black Pant</p>
+                <p class="text-col-1">&#3647;300</p>
+                <a href="./product-detail-men-pa-s-2.html"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="blue">
+                <img src="./img/p1-3.jpg" alt="pant">
+                <p class="text-col-1">Blue Pant</p>
+                <p class="text-col-1">&#3647;700</p>
+                <a href="./product-detail-men-pa-s-3.html"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="new-p red">
+                <img src="./img/p1-4.jpg" alt="pant">
+                <p class="text-col-1">Red Pant</p>
+                <p class="text-col-1">&#3647;500</p>
+                <a href="./product-detail-men-pa-s-4.html"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="new-p green">
+                <img src="./img/p1-5.jpg" alt="pant">
+                <p class="text-col-1">Green Pant</p>
+                <p class="text-col-1">&#3647;400</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="new-p yellow">
+                <img src="./img/p1-6.jpg" alt="pant">
+                <p class="text-col-1">Yellow Pant</p>
+                <p class="text-col-1">&#3647;1500</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="pop-p black">
+                <img src="./img/p1-7.jpg" alt="pant">
+                <p class="text-col-1">Black Pant</p>
+                <p class="text-col-1">&#3647;600</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="pop-p blue">
+                <img src="./img/p1-8.jpg" alt="pant">
+                <p class="text-col-1">Blue Pant</p>
+                <p class="text-col-1">&#3647;600</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="pop-p white">
+                <img src="./img/p1-9.jpg" alt="pant">
+                <p class="text-col-1">White Pant</p>
+                <p class="text-col-1">&#3647;500</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="blue white">
+                <img src="./img/p1-10.jpg" alt="pant">
+                <p class="text-col-1">White Pant</p>
+                <p class="text-col-1">&#3647;400</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="red">
+                <img src="./img/p1-11.jpg" alt="pant">
+                <p class="text-col-1">Red Pant</p>
+                <p class="text-col-1">&#3647;600</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="green">
+                <img src="./img/p1-12.jpg" alt="pant">
+                <p class="text-col-1">Green Pant</p>
+                <p class="text-col-1">&#3647;400</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+
+
+    <!--jv for filterable-->
+    <script>
+        let list = document.querySelectorAll('.list');
+        let itemBox = document.querySelectorAll('.itemBox');
+
+        for (let i = 0; i < list.length; i++) {
+            list[i].addEventListener('click', function () {
+                for (let j = 0; j < list.length; j++) {
+                    list[j].classList.remove('active-filter');
+                }
+                this.classList.add('active-filter');
+
+                let dataFilter = this.getAttribute('data-filter');
+                for (let k = 0; k < itemBox.length; k++) {
+                    itemBox[k].classList.remove('active-filter');
+                    itemBox[k].classList.add('hide');
+
+                    if (itemBox[k].getAttribute('data-item').split(' ').includes(dataFilter) || dataFilter === "all") {
+                        itemBox[k].classList.remove('hide');
+                        itemBox[k].classList.add('active-filter');
+                    }
+                }
+            })
+        }
+    </script>
+
+
+</body>
+
+</html>

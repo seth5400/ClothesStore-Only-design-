@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | GMJ</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-test.css">
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+    <style>
+        .success-container {
+    max-width: 1300px;
+    margin: 3% auto;
+    padding: 50px 25px;
+    text-align: center;
+    font-family: cool, sans-serif;
+    color: #555;
+   
+}
+.suc-text{
+     background-color: #f8d0cb;
+     margin-bottom: 10%;
+     padding: 5%;
+     color: black;
+}
+
+.success-icon {
+    color: #ff523b;
+    font-size: 50px;
+}
+
+.success-message {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.return-link {
+    text-decoration: none;
+    color: #ff523b;
+    font-size: 18px;
+}
+.role-container {
+    max-width: 1300px;
+    margin: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.role {
+    width: 40%; 
+    background-color: #fff;
+    border: 2px solid #ff523b;
+    padding: 5%;
+    margin: 2.5%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: center; 
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+    transition: teansform 0.5s ease-in;
+   
+ 
+
+} 
+.role:hover{
+    transform: translateY(-2%);
+}
+
+.role h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.report-form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.report-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+    </style>
+   
+<body>
+
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li1 active-menu"><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+<!--jv of ham menu-->
+<script>
+    function toggleHam(x) {
+        x.classList.toggle("change");
+
+        let myMenu = document.getElementById('myMenu');
+        if (myMenu.className === 'menu2') {
+            myMenu.className += ' menu2-active'
+        }
+        else {
+            myMenu.className = 'menu2'
+        }
+    }
+
+</script>
+
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./index.html">Home</a></li>
+            <li><a class="bread" href="./helps.html">Helps</a></li>
+            <li>Helps</li>
+        </ul>
+    </div>
+
+    <!--refund succress-->
+    <div class="success-container">
+        <div class="suc-text">
+             <h2 class="title success-message">Refund Request Submitted Successfully</h2>
+        <p>Your refund request has been received and will be processed shortly. You will receive an email confirmation with further instructions.</p>
+        <a href="./index.html" class="return-link">Return to Home</a>
+
+        </div>
+        <h2 class="title">What You Need To Know <br> About Refund</h2>
+        <div class="role-container">
+            <div class="role">
+                <h2>Customer Service Representative</h2>
+                <p>They are the first point of contact for customers seeking refunds, responsible for gathering information and providing clear instructions.</p>
+            </div>
+        
+            <div class="role">
+                <h2>Refund Processor</h2>
+                <p>Their role is to accurately and promptly process refunds, ensuring all information is valid and funds are sent to the correct account.</p>
+            </div>
+        
+            <div class="role">
+                <h2>Quality Assurance/Verification Team</h2>
+                <p>They verify if the refund request aligns with company policies, ensuring eligibility and authenticating customer information.</p>
+            </div>
+        
+            <div class="role">
+                <h2>Legal or Compliance Team</h2>
+                <p>They ensure the company's refund policies comply with relevant laws and regulations, providing guidance on legal requirements and ensuring fairness and transparency.</p>
+            </div>
+        </div>
+        
+    </div>
+ 
+    
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+               <div class="footer-col-1">
+                     <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+</body>
+
+</html>

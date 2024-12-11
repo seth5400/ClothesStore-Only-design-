@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMJ | Shopping Online</title>
+    <link rel="stylesheet" href="./style-test.css">
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .gallery-item {
+            width: calc(20% - 5%);
+            margin-bottom: 5%;
+            border: 2px solid #ccc;
+            transition: transform 0.5s;
+            box-shadow: 0 1px 2px black;
+
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5%);
+            background-color: #d6d6d6;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+
+        }
+    </style>
+
+<body>
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li1 active-menu"><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--jv of ham menu-->
+    <script>
+        function toggleHam(x) {
+            x.classList.toggle("change");
+
+            let myMenu = document.getElementById('myMenu');
+            if (myMenu.className === 'menu2') {
+                myMenu.className += ' menu2-active'
+            }
+            else {
+                myMenu.className = 'menu2'
+            }
+        }
+
+    </script>
+
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./index.html">Home</a></li>
+            <li><a class="bread" href="./helps.html">Helps</a></li>
+            <li>Gallery</li>
+        </ul>
+    </div>
+    <h2 class="title">GMJStore Gallery</h2>
+    <!--Gallery-->
+    <div class="gallery-container">
+
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item">
+            <img src="./img/sh-6-5.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item">
+            <img src="./img/sh5-3.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item">
+            <img src="./img/sh5-2.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item">
+            <img src="./img/sh-6-8.jpg" alt="Image 4">
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item">
+            <img src="./img/sh1-5.jpg" alt="Image 1">
+        </div>
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item">
+            <img src="./img/sh1-8.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 7 -->
+        <div class="gallery-item">
+            <img src="./img/sh1-2.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 8 -->
+        <div class="gallery-item">
+            <img src="./img/sh1-8.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 9 -->
+        <div class="gallery-item">
+            <img src="./img/sh2-2.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 10 -->
+        <div class="gallery-item">
+            <img src="./img/sh4-4.jpg" alt="Image 1">
+        </div>
+        <!-- Gallery Item 11 -->
+        <div class="gallery-item">
+            <img src="./img/sh1-1.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 12 -->
+        <div class="gallery-item">
+            <img src="./img/sh4-6.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 13 -->
+        <div class="gallery-item">
+            <img src="./img/sh4-2.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 14 -->
+        <div class="gallery-item">
+            <img src="./img/sh2-12.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 15 -->
+        <div class="gallery-item">
+            <img src="./img/sh1-6.jpg" alt="Image 1">
+        </div>
+    </div>
+
+
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

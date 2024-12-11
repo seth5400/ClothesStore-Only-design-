@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Notice | GMJ</title>
+    <link rel="stylesheet" href="./style-test.css">
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+   <style>
+            .term-content {
+        max-width: 1300px;
+        margin: 5% auto;
+        padding: 20px;
+        font-family: cool, sans-serif;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .terms-container {
+        background-color: #fff;
+        border: 2px solid #ff523b;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 25px;
+    }
+
+    div h3 {
+        font-size: 24px;
+        color: #ff644f;
+        margin: 2%;
+    }
+
+    p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 15px;
+        text-indent: 5%;
+        margin-top: 5px;
+    }
+   </style>
+<body>
+
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li1 active-menu"><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+<!--jv of ham menu-->
+<script>
+    function toggleHam(x) {
+        x.classList.toggle("change");
+
+        let myMenu = document.getElementById('myMenu');
+        if (myMenu.className === 'menu2') {
+            myMenu.className += ' menu2-active'
+        }
+        else {
+            myMenu.className = 'menu2'
+        }
+    }
+
+</script>
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./login.html">Sign In</a></li>
+            <li><a class="bread" href="./register.html">Sign Up</a></li>
+            <li>Term of Service</li>
+        </ul>
+    </div>
+
+
+    <!--term of service-->
+    <div class="term-content">
+        <div class="terms-container">
+            <h2 class="title">Terms of Service</h2>
+
+            <h3>1. Introduction</h3>
+            <p>Welcome to GMJ Shop! These terms and conditions govern your use of our website; by using our website, you accept these terms and conditions in full.</p>
+
+            <h3>2. Intellectual Property Rights</h3>
+            <p>Unless otherwise stated, we or our licensors own the intellectual property rights in the website and material on the website. Subject to the license below, all these intellectual property rights are reserved.</p>
+
+            <h3>3. License to Use Website</h3>
+            <p>You may view, download for caching purposes only, and print pages from the website for your own personal use, subject to the restrictions set out below and elsewhere in these terms of use.</p>
+
+            <h3>4. Limitations of Liability</h3>
+            <p>We will not be liable to you (whether under the law of contact, the law of torts or otherwise) in relation to the contents of, or use of, or otherwise in connection with, this website: for any indirect, special or consequential loss; or for any business losses, loss of revenue, income, profits or anticipated savings, loss of contracts or business relationships, loss of reputation or goodwill, or loss or corruption of information or data.</p>
+
+            <h3>5. Exceptions</h3>
+            <p>Nothing in this website disclaimer will exclude or limit any warranty implied by law that it would be unlawful to exclude or limit; and nothing in this website disclaimer will exclude or limit our liability in respect of any: death or personal injury caused by our negligence; fraud or fraudulent misrepresentation on our part; or matter which it would be illegal or unlawful for us to exclude or limit, or to attempt or purport to exclude or limit, its liability.</p>
+
+            <h3>6. Reasonableness</h3>
+            <p>By using this website, you agree that the exclusions and limitations of liability set out in this website disclaimer are reasonable. If you do not think they are reasonable, you must not use this website.</p>
+
+            <h3>7. Other Parties</h3>
+            <p>You accept that, as a limited liability entity, we have an interest in limiting the personal liability of our officers and employees. You agree that you will not bring any claim personally against our officers or employees in respect of any losses you suffer in connection with the website.</p>
+
+            <h3>8. Variation</h3>
+            <p>We may revise these terms of use from time to time. Revised terms of use will apply to the use of our website from the date of publication of the revised terms of use on our website.</p>
+
+            <h3>9. Entire Agreement</h3>
+            <p>These terms of use, together with our privacy policy, constitute the entire agreement between you and us in relation to your use of our website, and supersede all previous agreements in respect of your use of this website.</p>
+
+            <h3>10. Contact Information</h3>
+            <p>If you have any questions about these Terms, please contact us via email or write to us at the address provided on our Contact page.</p>
+
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

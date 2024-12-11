@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Notice | GMJ</title>
+    <link rel="stylesheet" href="./style-test.css">
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+
+<body>
+
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li1 active-menu"><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+<!--jv of ham menu-->
+<script>
+    function toggleHam(x) {
+        x.classList.toggle("change");
+
+        let myMenu = document.getElementById('myMenu');
+        if (myMenu.className === 'menu2') {
+            myMenu.className += ' menu2-active'
+        }
+        else {
+            myMenu.className = 'menu2'
+        }
+    }
+
+</script>
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./login.html">Sign In</a></li>
+            <li><a class="bread" href="./register.html">Sign Up</a></li>
+            <li>Privacy Notice</li>
+        </ul>
+    </div>
+
+
+
+    <div class="infor-container">
+        <div class="row1">
+            <h2 class="title">Privacy Notice</h2>
+            <p class="infor-p">Data privacy is of high importance for GMJ Store and we want to be open and transparent
+                with
+                our processing of your personal data.</p>
+            <p class="infor-p bp">We therefore have a policy setting out how your personal data will be processed and
+                protected.</p>
+
+            <div class="img-infor">
+                <img src="./image/privacy.png" alt="" >
+            </div>
+            <h2 class="title mt">Who is the controller of your personal data?</h2>
+            <p class="infor-p">The Thai company, MOSSThai (Thailand) Co., Ltd (“GMJStore”), is the controller of the
+                personal data you submit to us and responsible for your personal data under applicable data protection
+                law.
+            </p>
+            <p class="infor-p mt"><span>MOSSThai (Thailand) Co., Ltd</span><br>
+                4, 4/1-4/2, 4/4 Central World Plaza,
+                1st Floor, Unit No. F110-116,
+                Rajdamri Road, Pathumwan Bangkok 10330 Thailand
+
+            </p>
+            <p class="infor-p mt">
+                Companies register: Thailand Companies Registration Office
+                Company registration number: xxxxxxxxxx
+                Authorized representative:
+                Mr. Seth sertkawee
+                VAT registration number: VAT NO. xxxxxxxxxx <br>
+                The website is operated for Hthai (Thailand) Co. Ltd jointly by Hthai (Thailand) Co. Ltd and Gill
+                Capital
+                (S) Pte. Ltd
+            </p>
+        </div>
+
+        <div class="row2">
+            <h2 class="title mt">Where do we store your data?</h2>
+            <p class="infor-p ">
+                The data that we collect from you is stored within Thailand but may also be transferred to and processed
+                in countries outside of Thailand, such as countries of the European Economic Area (“EEA”). Any such
+                transfer
+                of your personal data will be carried out in compliance with applicable laws.
+            </p>
+            <p class="infor-p mt mb">
+                For transfers of your personal data, GMJStore will use Standard Contractual Clauses and Shields as
+                safeguards for countries without adequacy decisions from the European Commission.
+            </p>
+            <h2 class="title ">Who can access your data?</h2>
+            <p class="infor-p">
+                Your data may be shared within the GMJStore group and within the Gill Capital group (for details on the
+                GMJStore group, please refer to GMJStore group annual report which may be found at about. GMJStore.com;
+                for details on the Gill Capital group, please refer to www.gillcapital.sg.com). We never pass on, sell
+                or swap your data for marketing purposes to third parties outside the GMJStore group and outside the
+                Gill Capital group.
+            </p>
+            <p class="infor-p mt mb">
+                Data that is forwarded to third parties, is only used to provide you with our services. You will find
+                categories of third parties under every specific process below.
+            </p>
+            <h2 class="title ">What is the legal ground for processing?</h2>
+            <p class="infor-p">
+                For every specific process of personal data we collect from you, we will inform you whether the
+                provision of personal data is statutory or required to enter a contract and whether it is an obligation
+                to provide the personal data and possible consequences if you choose not to.
+            </p>
+        </div>
+
+        <div class="row3">
+            <h2 class="title mt">Right to erasure</h2>
+            <p class="infor-p">
+                You have the right to erase any personal data processed by us at any time except for the following
+                situations
+            </p>
+            <ul class="infor">
+                <li>You have an ongoing matter with Customer Service.</li>
+                <li>You have an open order which has not yet been shipped or partially shipped.</li>
+                <li>You have an unsettled debt with GMJStore or us, regardless of the payment method;</li>
+                <li>If you are suspected or have misused our services within the last four years.</li>
+                <li>Your debt has been sold to a third party within the last three years or one year for deceased
+                    customers.</li>
+                <li>Your credit application has been rejected within the last three months.</li>
+                <li >If you have made any purchase, we will keep your personal data in connection to your transaction for
+                    book-keeping purposes.</li>
+            </ul>
+        </div>
+        <div class="row4">
+            <div class="row4-1">
+                <h2>Right to access</h2>
+                <p class="infor-p">
+                    You have the right to request information about the personal data we hold on you at any time. You
+                    can contact us and we will provide you with your personal data via e-mail. </p>
+            </div>
+            <div class="row4-2">
+                <h2>Right to portability</h2>
+                <p class="infor-p">
+                    Whenever we process your personal data, by automated means based on your consent or based on an
+                    agreement, you have the right to get a copy of your data transferred to you or to another party.
+                    This only includes the personal data you have submitted to us. </p>
+            </div>
+            <div class="row4-3">
+                <h2>Right to rectification</h2>
+                <p class="infor-p">
+                    You have the right to request rectification of your personal data if the information is incorrect,
+                    including the right to have incomplete personal data completed. If you have an GMJStore account or
+                    Club membership you can edit your personal data under your account and membership pages.
+            </div>
+            <div class="row4-4">
+                <h2>Your Right to Object to Data </h2>
+                <p class="infor-p">
+                    Your right to object to processing based on legitimate interest
+                    You have the right to object to processing of your personal data that is based on GMJStore's
+                    legitimate interest. GMJStore will not continue to process the personal data unless we can
+                    demonstrate legitimate grounds for the process which overrides your interest and rights or due to
+                    legal claims.
+            </div>
+
+        </div>
+        <div class="row3">
+            <h2 class="title mt">Your right to object to direct marketing</h2>
+            <p class="infor-p">
+                You have the right to object to direct marketing, including profiling analysis made for direct marketing purposes.
+            </p>
+            <p class="infor-p mt">
+                You can opt out from direct marketing by the following means
+            </p>
+            <ul class="infor ">
+                <li>Following the instruction in each marketing emails.</li>
+                <li>By editing the settings of your GMJStore account</li>
+            </ul>
+            <h2 class="title mt">Right to restriction</h2>
+            <p class="infor-p">
+                You have the right to request that we restrict the process of your personal data under the following circumstances
+            </p>
+            <ul class="infor">
+                <li>If you object to a processing based GMJStore’s legitimate interest, we shall restrict all processing of such data pending the verification of the legitimate interest.</li>
+                <li>If you have claim that your personal data is incorrect, we must restrict all processing of such data pending the verification of the accuracy of the personal data.</li>
+                <li>If the processing is unlawful you can oppose the erasure of personal data and instead request the restriction of the use of your personal data instead.</li>
+                <li> If we no longer need the personal data but it is required by you to defend legal claims.</li>
+            </ul>
+        </div>
+        <div class="row5">
+            <h2 class="title mt">How can you exercise your rights?</h2>
+            <p class="infor-p">
+                We take data protection very seriously and therefore we have dedicated customer service personnel to handle your requests in relation to your rights stated above. You can always reach them at Seth.sertkawee@hthai.co.th.
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

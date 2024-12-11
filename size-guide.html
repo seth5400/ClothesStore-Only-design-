@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .reddd {
+        display: none;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Guide | GMJ</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-test.css">
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li1 active-menu"><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--jv of ham menu-->
+    <script>
+        function toggleHam(x) {
+            x.classList.toggle("change");
+
+            let myMenu = document.getElementById('myMenu');
+            if (myMenu.className === 'menu2') {
+                myMenu.className += ' menu2-active'
+            }
+            else {
+                myMenu.className = 'menu2'
+            }
+        }
+
+    </script>
+
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./helps.html">Helps</a></li>
+            <li><a class="bread" href="./helps.html">Helps</a></li>
+            <li>Size Guide</li>
+        </ul>
+    </div>
+
+    <div class="size-g-container">
+        <div class="sg-container-left">
+            <img src="./image/size-photo-w.png" alt="">
+        </div>
+        <div class="sg-container-right">
+            <h2 class="title sg-t">Women's size guide</h2>
+            <h3>HOW TO MEASURE</h3>
+            <p><span>BUST</span> volume is located in the most convex part of the bust line.</p>
+            <p><span>WAIST</span> the waist is located on the narrowet part of the body.</p>
+            <p><span>HIPS</span> hips are measured at the most convex part of the buttocks</p>
+
+            <table id="sg">
+                <thead id="h-sg">
+                    <tr>
+                        <td class="sg-line">SIZE</td>
+                        <td class="sg-line">CHEST</td>
+                        <td class="sg-line">WAIST</td>
+                        <td>HIPS</td>
+                    </tr>
+                </thead>
+                <tbody class="b-sq">
+                    <tr>
+                        <td class="sg-line">XS</td>
+                        <td class="sg-line">32-35</td>
+                        <td class="sg-line">26-27</td>
+                        <td>35-36</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">S</td>
+                        <td class="sg-line">34-35</td>
+                        <td class="sg-line">28-29</td>
+                        <td>37-38</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">M</td>
+                        <td class="sg-line">36-37</td>
+                        <td class="sg-line">30-31</td>
+                        <td>39-40</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">L</td>
+                        <td class="sg-line">38-39</td>
+                        <td class="sg-line">32-33</td>
+                        <td>41-41</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">XL</td>
+                        <td class="sg-line">40-41</td>
+                        <td class="sg-line">34-35</td>
+                        <td>43-44</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="size-g-container">
+        <div class="sg-container-left">
+            <img class="img-mens" src="./image/size-photo-m.png" alt="">
+        </div>
+        <div class="sg-container-right">
+            <h2 class="title sg-t">Men's size guide</h2>
+            <h3>HOW TO MEASURE</h3>
+            <p><span>BUST</span> volume is located in the most convex part of the bust line.</p>
+            <p><span>WAIST</span> the waist is located on the narrowet part of the body.</p>
+            <p><span>HIPS</span> hips are measured at the most convex part of the buttocks</p>
+
+            <table id="sg">
+                <thead id="h-sg">
+                    <tr>
+                        <td class="sg-line">SIZE</td>
+                        <td class="sg-line">CHEST</td>
+                        <td class="sg-line">WAIST</td>
+                        <td>HIPS</td>
+                    </tr>
+                </thead>
+                <tbody class="b-sq">
+                    <tr>
+                        <td class="sg-line">XS</td>
+                        <td class="sg-line">34-35</td>
+                        <td class="sg-line">28-29</td>
+                        <td>35-36</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">S</td>
+                        <td class="sg-line">36-37</td>
+                        <td class="sg-line">30-31</td>
+                        <td>37-38</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">M</td>
+                        <td class="sg-line">38-39</td>
+                        <td class="sg-line">32-33</td>
+                        <td>39-40</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">L</td>
+                        <td class="sg-line">40-41</td>
+                        <td class="sg-line">34-35</td>
+                        <td>41-41</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">XL</td>
+                        <td class="sg-line">42-43</td>
+                        <td class="sg-line">36-37</td>
+                        <td>43-44</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="size-g-container">
+        <div class="sg-container-left">
+            <img class="img-kids" src="./image/size-photo-k.png" alt="">
+        </div>
+        <div class="sg-container-right">
+            <h2 class="title sg-t">Kids size guide</h2>
+            <h3>HOW TO MEASURE</h3>
+            <p><span>BUST</span> volume is located in the most convex part of the bust line.</p>
+            <p><span>WAIST</span> the waist is located on the narrowet part of the body.</p>
+            <p><span>HIPS</span> hips are measured at the most convex part of the buttocks</p>
+
+            <table id="sg">
+                <thead id="h-sg">
+                    <tr>
+                        <td class="sg-line">SIZE</td>
+                        <td class="sg-line">CHEST</td>
+                        <td class="sg-line">WAIST</td>
+                        <td>HIPS</td>
+                    </tr>
+                </thead>
+                <tbody class="b-sq">
+                    <tr>
+                        <td class="sg-line">XS</td>
+                        <td class="sg-line">24-25</td>
+                        <td class="sg-line">20-21</td>
+                        <td>24-25</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">S</td>
+                        <td class="sg-line">26-27</td>
+                        <td class="sg-line">22-23</td>
+                        <td>26-27</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">M</td>
+                        <td class="sg-line">28-29</td>
+                        <td class="sg-line">24-25</td>
+                        <td>28-29</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">L</td>
+                        <td class="sg-line">30-31</td>
+                        <td class="sg-line">26-27</td>
+                        <td>30-31</td>
+                    </tr>
+                    <tr>
+                        <td class="sg-line">XL</td>
+                        <td class="sg-line">32-33</td>
+                        <td class="sg-line">28-29</td>
+                        <td>32-33</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

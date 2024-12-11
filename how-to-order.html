@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to order? | GMJ</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-test.css">
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+
+<body>
+
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li1 active-menu"><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--jv of ham menu-->
+    <script>
+        function toggleHam(x) {
+            x.classList.toggle("change");
+
+            let myMenu = document.getElementById('myMenu');
+            if (myMenu.className === 'menu2') {
+                myMenu.className += ' menu2-active'
+            }
+            else {
+                myMenu.className = 'menu2'
+            }
+        }
+
+    </script>
+
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./index.html">Home</a></li>
+            <li><a class="bread" href="./helps.html">Helps</a></li>
+            <li>How to Order</li>
+        </ul>
+    </div>
+
+
+    <div class="small-cintainer">
+        <h2 class="title">How to Order</h2>
+    </div>
+    <div class="how-container">
+        <div class="hbox1">
+            <div class="hbox1-1">
+                <p class="text-how">01</p>
+                <p><i class="fa-solid fa-cart-plus how-cart-ic"></i></p>
+            </div>
+            <div class="hbox1-2">
+                <h2 class="head-how">Add to Cart</h2>
+                <p class="text-how2">
+                    When you want a product, press "Add to Cart" on your shopping cart. The website will take you to the
+                    shopping cart page. to display all products in the shopping cart If you want to buy more products
+                    You can go to another product page.
+                </p>
+            </div>
+        </div>
+
+        <div class="hbox1">
+            <div class="hbox1-1">
+                <p class="text-how">02</p>
+                <p><i class="fa-solid fa-circle-check how-cart-ic2"></i></p>
+            </div>
+            <div class="hbox1-2">
+                <h2 class="head-how">Checkout</h2>
+                <p class="text-how2">
+                    When you are satisfied with your shopping, press the “Checkout” button on page A to enter the next
+                    step of ordering. Then log in or register and pay. Then fill in the information and click "Continue"
+                    after filling out the information completely and correctly in every step, then click "Order".
+                </p>
+            </div>
+        </div>
+
+        <div class="hbox1">
+            <div class="hbox1-1">
+                <p class="text-how">03</p>
+                <p><i class="fa-solid fa-credit-card how-cart-ic2"></i></p>
+
+            </div>
+            <div class="hbox1-2">
+                <h2 class="head-how">Transfer Payments</h2>
+                <p class="text-how2">
+                    Check order info and transfer payment.If no payment within 2 days, We will cancel the order to take
+                    that products back to sell to other customer.
+                </p>
+            </div>
+        </div>
+
+        <div class="hbox1">
+            <div class="hbox1-1">
+                <p class="text-how">04</p>
+                <p><i class="fa-solid fa-clipboard-check how-cart-ic2"></i></p>
+
+            </div>
+            <div class="hbox1-2">
+                <h2 class="head-how">Confirm Payment</h2>
+                <p class="text-how2">
+                    When you already transfer payments you can confirm payment by click menu "Confirm Payment"
+
+                </p>
+            </div>
+        </div>
+
+        <div class="hbox1">
+            <div class="hbox1-1">
+                <p class="text-how">05</p>
+                <p><i class="fa-solid fa-box-archive how-cart-ic2"></i></p>
+
+            </div>
+            <div class="hbox1-2">
+                <h2 class="head-how">Wait for Products</h2>
+                <p class="text-how2">
+                    After Confirm payment you can receive a product with ease. The product will arrive within 1-2
+                    days.When we send the products,the Tracking Number's send by email.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+</body>
+
+</html>

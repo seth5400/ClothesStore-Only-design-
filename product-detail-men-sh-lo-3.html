@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | GMJ</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-test.css">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+
+<body>
+
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li class="li1 active-menu"><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--jv of ham menu-->
+    <script>
+        function toggleHam(x) {
+            x.classList.toggle("change");
+
+            let myMenu = document.getElementById('myMenu');
+            if (myMenu.className === 'menu2') {
+                myMenu.className += ' menu2-active'
+            }
+            else {
+                myMenu.className = 'menu2'
+            }
+        }
+
+    </script>
+
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./index.html">Home</a></li>
+            <li><a class="bread" href="./product-m-page1.html">Men</a></li>
+            <li>Product Detail</li>
+        </ul>
+    </div>
+
+    <!--product details-->
+    <div class="small2-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="./img/sh2-3.jpg" id="ProductImg" alt="pic">
+            </div>
+            <div class="col-2 col-details">
+                <h1>Green T-Shirt</h1>
+
+                <h4>&#3647;700</h4>
+                <div class="input-container">
+                    <select>
+                        <option>Select Size</option>
+                        <option>XL</option>
+                        <option>L</option>
+                        <option>M</option>
+                        <option>S</option>
+                        <option>XS</option>
+                    </select>
+                    <input type="number" value="1">
+                    <i class="fa-solid fa-heart fav-icon"></i>
+                </div>
+
+                <a href="./cart.html" class="btn">Add to Cart</a><br>
+
+
+                <h3>Product Details</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti suscipit totam minus vero natus,
+                    inventore omnis alias? Mollitia error, quia non tempore reiciendis itaque, omnis, ullam ea rerum
+                    saepe eveniet.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="small2-container ">
+        <h2 class="title">Other Products</h2>
+        <a class="text-p" href="./product-men-page-pant-short.html">
+            <p>view more</p>
+        </a>
+        <div class="row otherP">
+            <div class="col-1 itemBox" data-item="red">
+                <img src="./img/k1-4.jpg" alt="pic">
+                <p class="text-col-1">Red T-shirt</p>
+                <p class="text-col-1 price">&#3647;1500</p>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+
+            </div>
+            <div class="col-1 itemBox" data-item="blue">
+                <img src="./img/p1-8.jpg" alt="img">
+                <p class="text-col-1">Red T-shirt</p>
+                <p class="text-col-1">&#3647;300</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="green">
+                <img src="./img/sh3-4.jpg" alt="img">
+                <p class="text-col-1">Red T-shirt</p>
+                <p class="text-col-1">&#3647;500</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="col-1 itemBox" data-item="new-p red">
+                <img src="./img/sh4-1.jpg" alt="img">
+                <p class="text-col-1">Red T-shirt</p>
+                <p class="text-col-1">&#3647;400</p>
+                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

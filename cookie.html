@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMJ | Shopping Online</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-test.css">
+    <link rel="icon" type="image/png" href="./image/logo-for-titel.png">
+    <script src="https://kit.fontawesome.com/362b2fc2ab.js" crossorigin="anonymous"></script>
+    <style>
+        .cookie-container {
+            font-family: cool, sans-serif;
+            letter-spacing: 2px;
+            line-height: 38px;
+            font-size: 18px;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+
+
+        .cookie-text {
+            margin-bottom: 5em;
+            text-indent: 5%;
+
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 5em;
+        }
+
+        .cookie-table th,
+        .cookie-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        .cookie-table th {
+            background-color: #f9f9f9;
+        }
+
+        .cookie-table td {
+            text-align: center;
+        }
+
+        .cookie-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .cookie-table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .cookie-table th,
+        .cookie-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .cookie-img {
+            width: 40%;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            margin-bottom: 5%;
+        }
+    </style>
+
+<body>
+    <div class="logo">
+        <a href="./index.html"><img src="./image/logo-main.png" alt="website logo"></a>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-magnifying-glass search"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user user"></i></a>
+            <a href="./favorite.html"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping cartt"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-men-page-main.html">Men</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-men-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-men-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-men-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-women-page-main.html">Women</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-sh-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-women-page-sh-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Pants</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-women-page-pant-short.html">Shorts</a></li>
+                            <li><a href="./product-women-page-pant-long.html">Ankle Pants</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./product-kids-page-main.html">Kids</a>
+                <ul class="menu-level-2">
+                    <li><a href="">Shirts</a>
+                        <ul class="menu-level-3">
+                            <li><a href="./product-kids-page-short.html">T-Shirts <br>(Short-Sleeved)</a></li>
+                            <li><a href="./product-kids-page-long.html">T-Shirts <br>(Long-Sleeved)</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="li1 active-menu"><a href="./helps.html">Helps</a></li>
+        </ul>
+
+    </nav>
+    <!--nav-hamburger-->
+    <div class="nav-for-ham">
+        <div class="nav-wrapper">
+            <div class="ham-wrapper">
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu2" id="myMenu">
+                <div class="search-bar">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-men-page-main.html">Men</a></li>
+                    <li><a href="./product-women-page-main.html">Women</a></li>
+                    <li><a href="./product-kids-page-main.html">Kids</a></li>
+                    <li><a href="./helps.html">Helps</a></li>
+                    <li><a href="./login.html">Account</a></li>
+                    <li><a href="./favorite.html">Favorite</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--jv of ham menu-->
+    <script>
+        function toggleHam(x) {
+            x.classList.toggle("change");
+
+            let myMenu = document.getElementById('myMenu');
+            if (myMenu.className === 'menu2') {
+                myMenu.className += ' menu2-active'
+            }
+            else {
+                myMenu.className = 'menu2'
+            }
+        }
+
+    </script>
+
+    <div class="small-container">
+        <ul class="breadcrumb">
+            <li><a class="bread" href="./index.html">Home</a></li>
+            <li><a class="bread" href="./helps.html">Helps</a></li>
+            <li>COOKIE NOTICE</li>
+        </ul>
+    </div>
+
+    <!--content-->
+    <div class="cookie-container">
+        <img src="./image/7900_4_2_02.jpg" class="cookie-img" alt="cookiecha">
+        <h2 class="title">Cookie Notice</h2>
+        <p class="cookie-text">
+            Whenever you visit our website, we place cookies onto your device for different reasons. A cookie is a small
+            text-based file that is downloaded and stored on your computer, mobile or similar device and contains
+            information about your navigation on the website. They can for example, be used to keep track of which pages
+            you visit on the website, to save the information you entered, or your preferences remembered, such as
+            language settings.
+        </p>
+
+        <h3 class="title">Description</h3>
+        <p class="cookie-text">
+            Cookie Notice provides a simple, customizable website banner that can be used to help your website comply
+            with certain cookie consent requirements under the EU GDPR cookie law and CCPA regulations and includes
+            seamless integration with Cookie Compliance to help your site comply with the latest updates to existing
+            consent laws.
+        </p>
+
+        <p class="cookie-text">
+            Cookie Compliance is a fully featured Consent Management Platform (CMP) that provides automated compliance
+            features and enhanced design controls in a state-of-the-art web application. Cookie Compliance enables
+            websites to take a proactive approach to data protection and consent laws. It is the first solution to offer
+            Intentional Consent, a new consent framework that incorporates the latest guidelines from over 100+
+            countries, and emerging standards from leading international organizations like the IEEE and European Center
+            for Digital Rights (noyb.eu). Cookie Compliance provides a beautiful, multi-level experience and includes
+            new choices and controls for site visitors to better understand and engage in data privacy decisions.
+        </p>
+
+        <h3 class="title">Why do we use them?</h3>
+        <p class="cookie-text">
+            We use cookies to give you the full functionality of the website, to customize your user experience, perform
+            analytics and improve our services. Cookies are also used to deliver personalized advertising on our
+            websites, apps, and newsletters across internet and via social media platforms, to get insights regarding
+            for example how many people click on a Social Media ad from us to visit a page on our website. The
+            information is used to measure and optimize advertising in social media.
+        </p>
+
+        <h3 class="title">Marketing Cookies</h3>
+        <table class="cookie-table">
+            <tr>
+                <th>Cookie Subgroup</th>
+                <th>Cookies</th>
+                <th>Cookies used</th>
+                <th>Lifespan</th>
+            </tr>
+            <tr>
+                <td>cl.hm.com</td>
+                <td>affiliateCookie</td>
+                <td>First Party</td>
+                <td>Session</td>
+            </tr>
+            <tr>
+                <td>career.hm.com</td>
+                <td>ln_or</td>
+                <td>First Party</td>
+                <td>A few seconds</td>
+            </tr>
+            <tr>
+                <td>www2.hm.com</td>
+                <td>__olapicU</td>
+                <td>First Party</td>
+                <td>30 Days</td>
+            </tr>
+            <tr>
+                <td>www2.hm.com</td>
+                <td>__attentive_dv</td>
+                <td>First Party</td>
+                <td>A few seconds</td>
+            </tr>
+            <tr>
+                <td>www2.hm.com</td>
+                <td>__attentive_id</td>
+                <td>First Party</td>
+                <td>21899 Days</td>
+            </tr>
+            <tr>
+                <td>www2.hm.com</td>
+                <td>__attentive_pv</td>
+                <td>First Party</td>
+                <td>A few seconds</td>
+            </tr>
+            <tr>
+                <td>www2.hm.com</td>
+                <td>__attentive_ss_referrer</td>
+                <td>First Party</td>
+                <td>A few seconds</td>
+            </tr>
+            <tr>
+                <td>www2.hm.com</td>
+                <td>__attentive_cco</td>
+                <td>First Party</td>
+                <td>21899 Days</td>
+            </tr>
+            <tr>
+                <td>hm.com</td>
+                <td>_fbp</td>
+                <td>First Party</td>
+                <td>90 Days</td>
+            </tr>
+        </table>
+        <h2 class="title">Cookie Notice</h2>
+        <p class="cookie-text">
+            Whenever you visit our website, we place cookies onto your device for different reasons. A cookie is a small
+            text-based file that is downloaded and stored on your computer, mobile, or similar device and contains
+            information about your navigation on the website. They can, for example, be used to keep track of which
+            pages you visit on the website, to save the information you entered, or your preferences remembered, such as
+            language settings.
+        </p>
+
+        <h3 class="title">Description</h3>
+        <p class="cookie-text">
+            Cookie Notice provides a simple, customizable website banner that can be used to help your website comply
+            with certain cookie consent requirements under the EU GDPR cookie law and CCPA regulations and includes
+            seamless integration with Cookie Compliance to help your site comply with the latest updates to existing
+            consent laws.
+        </p>
+
+        <p class="cookie-text">
+            Cookie Compliance is a fully featured Consent Management Platform (CMP) that provides automated compliance
+            features and enhanced design controls in a state-of-the-art web application. Cookie Compliance enables
+            websites to take a proactive approach to data protection and consent laws. It is the first solution to offer
+            Intentional Consent, a new consent framework that incorporates the latest guidelines from over 100+
+            countries, and emerging standards from leading international organizations like the IEEE and European Center
+            for Digital Rights (noyb.eu). Cookie Compliance provides a beautiful, multi-level experience and includes
+            new choices and controls for site visitors to better understand and engage in data privacy decisions.
+        </p>
+
+        <h3 class="title">Why do we use them?</h3>
+        <p class="cookie-text">
+            We use cookies to give you the full functionality of the website, to customize your user experience, perform
+            analytics and improve our services. Cookies are also used to deliver personalized advertising on our
+            websites, apps, and newsletters across the internet and via social media platforms, to get insights
+            regarding, for example, how many people click on a Social Media ad from us to visit a page on our website.
+            The information is used to measure and optimize advertising in social media.
+        </p>
+    </div>
+
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Shops</h3>
+                    <ul>
+                        <li><a class="active1" href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Customer service department</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-4">
+                    <a href="./index.html"><img src="./image/logo-main-white.png" alt="logo"></a>
+                    <p>The website "GMJ Shop" originated as a project for the CP352201 Web Design Technology course. Its
+                        purpose was to study and apply web design principles. Our team chose to create an online store
+                        called "GMJ Shop."</p>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright 2023 - Website of Shopping</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
