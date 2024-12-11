@@ -22,3 +22,5 @@ This project is designed solely for demonstrating front-end web development skil
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/ClothesStore.git
+
+2. Open the index.html file in your browser to view the website.
