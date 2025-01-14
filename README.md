@@ -3,6 +3,9 @@
 ## Overview
 ClothesStore is a design-focused HTML/CSS project showcasing a clothing e-commerce website. This project demonstrates skills in front-end web design and layout, aimed at creating a user-friendly and visually appealing online shopping experience.
 
+## About This Project
+This project is a collaborative effort between me and my friend. It represents a fully designed but non-functional Clothes Store website, focusing on UI/UX and front-end design.
+
 ## Features
 - **Home Page**: Welcomes users with an attractive design and highlights featured products.
 - **Product Pages**: Includes dedicated pages for men’s, women’s, and kids' clothing with detailed product descriptions.
